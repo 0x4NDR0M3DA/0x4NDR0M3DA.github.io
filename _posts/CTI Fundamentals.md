@@ -1,3 +1,7 @@
+| title  | time |  categories | tags | 
+|-------|-----|--------------|-----|
+| Test | 2026-01-17 05:00  | cti |
+
 **Relevance of CTI** - align the relevance of intelligence to our scope in organization. 
 
 **Timeliness** - swift CTI communication to relevant parties, such as SOC or Threat Hunters. Old intelligence is not worth it - it diminishes with time.
