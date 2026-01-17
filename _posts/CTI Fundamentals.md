@@ -1,6 +1,10 @@
-| title  | time |  categories | tags | 
-|-------|-----|--------------|-----|
-| Test | 2026-01-17 05:00  | derp | cti |
+---
+title: Hack the Boo 2023 - Writeups
+time: 2023-10-28 12:00:00
+categories: [learning]
+tags: [cti]
+image:
+---
 
 **Relevance of CTI** - align the relevance of intelligence to our scope in organization. 
 
