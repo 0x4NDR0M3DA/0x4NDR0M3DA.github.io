@@ -1,6 +1,6 @@
 | title  | time |  categories | tags | 
 |-------|-----|--------------|-----|
-| Test | 2026-01-17 05:00  | cti |
+| Test | 2026-01-17 05:00  | derp | cti |
 
 **Relevance of CTI** - align the relevance of intelligence to our scope in organization. 
 
