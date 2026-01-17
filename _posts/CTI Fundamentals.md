@@ -3,7 +3,7 @@ title: Hack the Boo 2023 - Writeups
 time: 2023-10-28 12:00:00
 categories: [learning]
 tags: [cti]
-image:
+image: /assets/img/signal-2026-01-07-193350_002.jpeg
 ---
 
 **Relevance of CTI** - align the relevance of intelligence to our scope in organization. 
