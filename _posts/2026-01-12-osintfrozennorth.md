@@ -46,7 +46,7 @@ Alright, time for a small summary: a `cargo ship` docked at a `small, arctic por
 
 Based on current findings, my educated guess pointed me to a location to **latitude of at least 60-70 degrees north**.
 
-### Port Mapping Attempts
+### Port mapping attempts!
 
 Armed with my up to date findings, I went to **MarineTraffic** to try to map the port and its geographical characteristics with a base of known ports from the portal.
 
@@ -58,7 +58,7 @@ After additional research, I found several news articles mentioning Russian pres
 
 ![arctic](/assets/posts/osintfrozennorth2026/arctic.png)
 
-#### ...Russia, again?
+### ...Russia at it again.
 
 If that's the deal, then this might be a military complex. I then searched for maps with known locations of Russian military bases in the Arctic theatre. Quickly, a map from **AmericanSecurityProject** helped me tremendously. Marked in red are two ports that were not visible on the **MaritimeTraffic** map - one is located in **Franz Josef Land**, the second one near **Komsomolets Island**.
 
@@ -74,7 +74,7 @@ I then compared the original image with up-to-date and historical data. I used *
 
 ![portfound](/assets/posts/osintfrozennorth2026/portfound.png)
 
-#### Back to the ship!
+### Back to the ship!
 
 Now, with a port location known, I went straight to **GlobalFishingWatch** to analyze all vessels that broadcasted their position near or in the port around Sep 1st, 2022.
 
