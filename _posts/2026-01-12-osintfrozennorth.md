@@ -17,7 +17,7 @@ Below you can find my writeup of one of the Bellingcat's OSINT challenges - **Th
 
 As per the description, we are tasked with identifying the ship present on satellite image by providing its **IMO (International Maritime Organization) number** - a unique ship identifier.
 
-![challenge](/assets/posts/osintfrozennorth2026/challenge.png)
+fotka tutaj
 
 First impression - well, not a lot to work with. The image isn't clear due to cloud cover, the terrain looks rather complex and snowy, the "port" itself is shorter than the vessel, no visible buildings...
 
