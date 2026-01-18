@@ -1,5 +1,5 @@
 ---
-title: Bellingcat OSINT Challenge: The Frozen North - Writeup
+title: Bellingcat OSINT Challenge - The Frozen North - Writeup
 time: 2026-01-12 15:00:00
 categories: [osint]
 tags: [osint,maritime,military]
