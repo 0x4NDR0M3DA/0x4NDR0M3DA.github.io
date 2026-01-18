@@ -92,8 +92,6 @@ Surely enough, I found some hits. Looks like there were two vessels heading to a
 
 I then checked the IMO against **ShipSpotting** website. It surely matches our original vessel description!
 
-https://www.shipspotting.com/photos/3293355?navList=gallery&imo=8904434&page=1&viewType=normal&sortBy=newest
-
 ![pyatlin2](/assets/posts/osintfrozennorth2026/pyatlin2.png)
 
 And there is our answer!
