@@ -3,7 +3,7 @@ title: Bellingcat OSINT Challenge: The Frozen North - Writeup
 time: 2026-01-12 15:00:00
 categories: [osint]
 tags: [osint,maritime,military]
-image: /assets/posts/osintfrozennorth2026/title.png
+image: /assets/posts/osintfrozennorth2026/shiptitle.png
 ---
 
 ### Overview
