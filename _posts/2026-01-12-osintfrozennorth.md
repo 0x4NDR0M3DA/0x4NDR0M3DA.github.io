@@ -6,9 +6,7 @@ tags: [osint,maritime,military]
 image: /assets/posts/osintfrozennorth2026/shiptitle.png
 ---
 
-### Overview
-
-I started 2026 with a solid focus on open source intelligence. I feel like up until this point, I didn't really dive deep enough into the field, even though I've always considered OSINT as one of the most valuable tradecrafts that you can master in today's age.
+My 2026 has started with a solid focus on open source intelligence. I feel like up until this point, I didn't really dive deep enough into the field, even though I've always considered OSINT as one of the most valuable tradecrafts that you can master in today's world.
 
 Below you can find my writeup of one of the Bellingcat's OSINT challenges - **The Frozen North**. Grab something to eat, make yourself a coffee, relax and have fun!
 
