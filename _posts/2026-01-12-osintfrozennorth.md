@@ -6,13 +6,13 @@ tags: [osint,maritime,military]
 image: /assets/posts/osintfrozennorth2026/shiptitle.png
 ---
 
-My 2026 has started with a solid focus on open source intelligence. I feel like up until this point, I didn't really dive deep enough into the field, even though I've always considered OSINT as one of the most valuable tradecrafts that you can master in today's world.
+For me, 2026 has started with a solid focus on open source intelligence. I feel like up until this point in my career, I didn't really dive deep enough into the field, even though I've always considered OSINT as one of the most valuable tradecrafts you can master in today's world. Time to change that!
 
 Below you can find my writeup of one of the Bellingcat's OSINT challenges - **The Frozen North**. Grab something to eat, make yourself a coffee, relax and have fun!
 
 
-### Image Analysis
-
+# Analysis
+### Initial image analysis
 As per the description, we are tasked with identifying the ship present on satellite image by providing its **IMO (International Maritime Organization) number** - a unique ship identifier.
 
 ![challenge](/assets/posts/osintfrozennorth2026/challenge.png)
