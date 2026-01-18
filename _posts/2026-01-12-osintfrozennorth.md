@@ -15,98 +15,89 @@ Below you can find my writeup of one of the Bellingcat's OSINT challenges - **Th
 
 As per the description, we are tasked with identifying the ship present on satellite image by providing its **IMO (International Maritime Organization) number** - a unique ship identifier.
 
-fotka tutaj
+![challenge](/assets/posts/osintfrozennorth2026/challenge.png)
 
-First impression - well, not a lot to work with. The image isn't clear due to cloud cover, the terrain looks rather complex and snowy, the "port" itself is shorter than the vessel, no visible buildings...
+Initial impression? Well, not a lot to work with. The image isn't clear due to cloud cover, landscape looks complex and snowy, the port itself is shorter than the vessel, no recognizable buildings... This means that we are indeed dealing with an extremely isolated place, where ship traffic is sparse.
 
-A frozen north, icy port that is able to serve only one vessel at a time...This means that we are dealing with a place far north. Filename of the image is **20220901_091318-C5etx_H-.png**. Could it be date and time of the photo being taken?
+Quick reverse image search - nothing. No search engine was able to point me to any reasonable clue.
 
-No search engine could give me any sensible clue of where this is located.
+Let's start with investigating the terrain. We have a coast with fair amount of snow on its edges and in the interior. Take a look at how snow is distributed - its presence emphasizes slopes, creating a layer effect throughout the landscape. This must mean that the land is not flat and has significant height differences. There are a few bodies of water immediately behind the coast with complex shorelines, and a possible road heading northbound, visible on the left side.
 
-Let's start with topography of the terrain. There is a coast with fair amount of snow on its edges and interior. Take a look at how it is distributed - its presence emphasizes slopes, creating a layer effect. My idea was that the terrain is not flat and has significant height differences. There are a few bodies of water immediately behind the coast with complex shorelines, a possible road heading northbound visible on the left portion of the image.
+![analysis1](/assets/posts/osintfrozennorth2026/analysis1.png)
 
-![[Pasted image 20260118130135.png]]
+Having that out of the way, I started looking for any trace of settlements / buildings / installations beside the port itself. And surely, I've found **three points of interest** that could help with analysis. I've increased exposure and contrast of the image so they are much more visible:
+- a **container yard** or **warehouse complex** near the port,
+- an installation that looks similar to **research outpost**,
+- a possible **settlement with housing buildings**.
 
-#### Anybody out there?
+![analysis2](/assets/posts/osintfrozennorth2026/analysis2.png)
 
-After that, I started looking for any trace of settlements / buildings / installations beside the port itself. And surely, there are **three points of interest** that could help with the investigation. I've increased exposure and contrast of the image so they are much more visible:
-- a`container yard` or `warehouses` near the port,
-- a complex that looks like an `arctic research outpost`,
-- a `settlement with housing buildings`.
+The forementioned "research complex" caught my immediate attention, because it has two rows of symmetrical, orange objects... I couldn''t think of a better idea than these being **fuel tanks**, similar to the image below:
 
-![[Pasted image 20260118134840.png]]
+![fuel](/assets/posts/osintfrozennorth2026/fuel.png)
 
-I focused my attention on the "research complex", because it has two rows of symmetrical, orange objects. I immediately thought that these must serve as a **fuel storage**, similar to the image below:
+Then, I moved to the ship itself. Looks like its superstructure is on the aft and it has two yellow cranes midship. Hard to tell if there is any cargo onboard or in the port. If you look closely however, both of those cranes are rotated in different directions. Not that it means much, although I thought that this was worth noting down as it could indicateloading/unloading process.
 
-![[Pasted image 20260118140311.png]]
+![shipcranes](/assets/posts/osintfrozennorth2026/shipcranes.png)
 
-Now, the vessel itself. The superstructure is on the aft, it has two yellow cranes midship. Hard to tell if there is any cargo onboard. If you look closely however, both of those cranes are rotated in different directions. Not that it means a lot, but that might indicate that the ship could be in the middle of loading/unloading operations when photo was taken.
+Another interesting clue is **filename** of the image - `20220901_091318-C5etx_H-.png`. This part looks like a datetime (**20220901_091318**). So, I made an assumption - if I were to believe it, this could mean that the photo was taken on **Sep 1st, 2022 at 09:13:18**, but which timezone are we speaking of... Nonetheless, given my theory, I tasked myself with finding objects that cast visible shadow and tried to approximate bearing. Turns out, shadows point almost perfectly north, meaning that local time is around noon.
 
-![[Pasted image 20260118142622.png]]
+Alright, time for a small summary: a `cargo ship` docked at a `small, arctic port`, possibly u`ndergoing loading/unloading operations`. The port itself is most definitely not a hub. It serves as a **landing zone for an arctic outpost or base with visible buildings, containers and fuel storage**. The terrain has a few bodies of water behind the shoreline and a road on the left.
 
-Let's trace back to the filename. Assuming that it indeed specifies date and time (**20220901_091318**) - it means that the photo was taken on **Sep 1st, 2022 at 09:13:18**, but we don't know if UTC, UTC+8, UTC-8 etc... Given that information, I tasked myself with finding an object that casts a visible shadow. Turns out that the shadows point almost perfectly north, meaning that local time is around noon.
+Based on current findings, my educated guess pointed me to a location to **latitude of at least 60-70 degrees north**.
 
-Summarizing the findings: image shows a cargo ship docked at a small, arctic port and is currently undergoing loading/unloading operations, judging by the cranes position. The port appears to be a part of an arctic research or military base with visible buildings, containers and fuel storage. The terrain has a few bodies of water behind the shoreline and a road on the left.
+### Port Mapping Attempts
 
-If all of the above is true, then the port should located at **latitude of at least 60-70 degrees north**.
+Armed with my up to date findings, I went to **MarineTraffic** to try to map the port and its geographical characteristics with a base of known ports from the portal.
 
-# Port Mapping
-#### There's so many!
+![marinetraffic](/assets/posts/osintfrozennorth2026/marinetraffic.png)
 
-Armed with that knowledge, I used **MarineTraffic** to try and map the port and its topological characteristics with a base of known ports from the portal.
+I was interested in pretty much anything above this line. Sadly, after several hours and countless identification attempts later, I had no candidates. I commited to double check Northern Canada, Alaska, Russia, Svalbard, Norway, Greenland... Still nothing. At this point I knew that I have to change strategy. It was completely plausibe that the port itself got modernized, the geography might have changed or... **it's not present on the map at all**.
 
-![[Pasted image 20260118160859.png]]
+After additional research, I found several news articles mentioning Russian presence in the Arctic Ocean. Main consensus was that there are significant efforts related to militarization of the ocean coming from Russia. Due to global warming and subsequent ice melting, new routes of traffic may emerge - for civilian and military ships alike. Sounds like a whole new playground from geopolitical perspective.
 
- I was interested in pretty much anything above this line. Sadly, after several hours and countless port visits later, I still had nothing. Double checks done in Northern Canada, Alaska, Russia, Svalbard, Norway, Greenland... At this point I knew that I have to change strategy. It could be that the port itself got modernized, the topology might have changed or **it's not marked on the map at all**.
+![arctic](/assets/posts/osintfrozennorth2026/arctic.png)
 
-After additional research, I found several news articles about Russian presence in the Arctic Ocean. Main consensus was that there are significant efforts related to militarization of the arctic coming from Russia, due to global warming and subsequent ice melting.
+#### ...Russia, again?
 
+If that's the deal, then this might be a military complex. I then searched for maps with known locations of Russian military bases in the Arctic theatre. Quickly, a map from **AmericanSecurityProject** helped me tremendously. Marked in red are two ports that were not visible on the **MaritimeTraffic** map - one is located in **Franz Josef Land**, the second one near **Komsomolets Island**.
 
-![[Pasted image 20260118163357.png]]
+![bases](/assets/posts/osintfrozennorth2026/bases.png)
 
-![[Pasted image 20260118163446.png]]
+I quickly examited **Nagurskoye Airbase** that is located in **Franz Josef Land** archipelago, more precisely on **Alexander Island**.
 
+![base2](/assets/posts/osintfrozennorth2026/base2.png)
 
-#### Russia again!
+I then compared the original image with up-to-date and historical data. I used **Google Earth** and **World Imagery Wayback** to investiage and... there it is! The port belongs to the Nagurskoye Airbase. Coordinates: 
 
-I then searched for known Russian military bases in the Arctic theatre. I used this map - https://www.americansecurityproject.org/russian-arctic-military-bases/. Marked in red are two bases/ports that were not visible on the **MaritimeTraffic** map.
-
-![[Pasted image 20260118164204.png]]
-
-I quickly examited **Nagurskoye Airbase** that is located in **Franz Josef Land** archipelago, specifically **Alexander Island**.
-
-![[Pasted image 20260118164603.png]]
-
-Then, I started to compare the original image with up-to-date and historical data. I used **Google Earth** and **World Imagery Wayback** - https://livingatlas.arcgis.com/wayback/#mapCenter=47.69376%2C80.77568%2C13&mode=explore&active=45134 and succesfully identified that the port is in fact located on the island! Coordinates: 
 **80°46'17"N 47°40'22"E**
 
-![[Pasted image 20260118165326.png]]
+![portfound](/assets/posts/osintfrozennorth2026/portfound.png)
 
 #### Back to the ship!
 
-With a port location known, I went straight to **GlobalFishingWatch** https://globalfishingwatch.org/map website to pinpoint all vessels that broadcasted their position near or in the port around Sep 1st, 2022.
+Now, with a port location known, I went straight to **GlobalFishingWatch** to analyze all vessels that broadcasted their position near or in the port around Sep 1st, 2022.
 
-Surely enough, there they are. Looks like there were two vessels heading to and out of the island between **Aug 30th - Sep 3rd.**:
-`- Mekhanik Pyatlin
-`- Cirrus
+Surely enough, I found some hits. Looks like there were two vessels heading to and out of the island between **Aug 30th - Sep 3rd.**:
+- **Mekhanik Pyatlin**
+- **Cirrus**
 
-![[Pasted image 20260118170249.png]]
+![gfw1](/assets/posts/osintfrozennorth2026/gfw1.png)
 
+![gfw2](/assets/posts/osintfrozennorth2026/gfw2.png)
 
-![[Pasted image 20260118170437.png]]
+**Mekhanik Pyatlin** is a cargo ship with IMO **8904434**. Additionaly, judging by its AIS signal, it spent 41 hours in the port - in line with the theory that it was performing loading or unloading operations on **Sep 1st**.
 
-Details of the **Mekhanik Pyatlin** cargo ship with IMO **8904434** - it spent 41 hours in the port - in line with a theory that the vessel was performing loading or unloading operations on Sep 1st.
-
-![[Pasted image 20260118170707.png]]
+![pyatlin1](/assets/posts/osintfrozennorth2026/pyatlin1.png)
 
 I then checked the IMO against **ShipSpotting** website. It surely matches our original vessel description!
 
 https://www.shipspotting.com/photos/3293355?navList=gallery&imo=8904434&page=1&viewType=normal&sortBy=newest
 
-![[Pasted image 20260118171148.png]]
+![pyatlin2](/assets/posts/osintfrozennorth2026/pyatlin2.png)
 
 And there is our answer!
 
-![[Pasted image 20260118171226.png]]
+![answer](/assets/posts/osintfrozennorth2026/answer.png)
 
-Huh, that was something. I really feel like my OSINT skills increased dramatically after this one. I had a lot of fun, even though some parts of the investigation didn't yield any meaningful results - I still learned a ton about maritime open source intel. Thank you for reading, I hope you enjoyed the writeup and had as much fun as I did!
+Huh, that was something. I had a lot of fun, even though some parts of the investigation didn't yield any meaningful results - I still learned a ton about maritime open source intel. Thank you for reading, I hope you enjoyed the writeup. Take care and until the next one!
