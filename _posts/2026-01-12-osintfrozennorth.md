@@ -17,11 +17,11 @@ As per the description, we are tasked with identifying the ship present on satel
 
 ![challenge](/assets/posts/osintfrozennorth2026/challenge.png)
 
-Initial impression? Well, not a lot to work with. The image isn't clear due to cloud cover, landscape looks complex and snowy, the port itself is shorter than the vessel, no recognizable buildings... This means that we are indeed dealing with an extremely isolated place, where ship traffic is sparse.
+Well, not a lot to work with. The image isn't clear due to cloud cover, landscape looks complex and snowy, the port itself is shorter than the vessel, no recognizable buildings... This means that we are indeed dealing with an extremely isolated place, where ship traffic is sparse.
 
 Quick reverse image search - nothing. No search engine was able to point me to any reasonable clue.
 
-Let's start with investigating the terrain. We have a coast with fair amount of snow on its edges and in the interior. Take a look at how snow is distributed - its presence emphasizes slopes, creating a layer effect throughout the landscape. This must mean that the land is not flat and has significant height differences. There are a few bodies of water immediately behind the coast with complex shorelines, and a possible road heading northbound, visible on the left side.
+Let's start with investigating the terrain. We have a coast with fair amount of snow on its edges and in the interior. Take a look at how the snow is distributed - its presence emphasizes slopes, creating a layer effect throughout the landscape. This must mean that the land is not flat and has significant height differences. There are a few bodies of water immediately behind the coast with complex shorelines, and a possible road heading northbound, visible on the left side.
 
 ![analysis1](/assets/posts/osintfrozennorth2026/analysis1.png)
 
@@ -32,19 +32,19 @@ Having that out of the way, I started looking for any trace of settlements / bui
 
 ![analysis2](/assets/posts/osintfrozennorth2026/analysis2.png)
 
-The forementioned "research complex" caught my immediate attention, because it has two rows of symmetrical, orange objects... I couldn''t think of a better idea than these being **fuel tanks**, similar to the image below:
+The aforementioned "research complex" caught my attention as it appears to have two rows of symmetrical, orange objects...I couldn't think of a better explanation than these being **fuel tanks**, similar to the image below:
 
 ![fuel](/assets/posts/osintfrozennorth2026/fuel.png)
 
-Then, I moved to the ship itself. Looks like its superstructure is on the aft and it has two yellow cranes midship. Hard to tell if there is any cargo onboard or in the port. If you look closely however, both of those cranes are rotated in different directions. Not that it means much, although I thought that this was worth noting down as it could indicateloading/unloading process.
+Then, I moved to the ship itself. Looks like its superstructure is on the aft and it has two yellow cranes midship. Hard to tell if there is any cargo onboard or in the port. If you look closely however, both of those cranes are rotated in different directions. Not that it means much, but in my mind it was worth noting down as it could indicate loading/unloading process.
 
 ![shipcranes](/assets/posts/osintfrozennorth2026/shipcranes.png)
 
-Another interesting clue is **filename** of the image - `20220901_091318-C5etx_H-.png`. This part looks like a datetime (**20220901_091318**). So, I made an assumption - if I were to believe it, this could mean that the photo was taken on **Sep 1st, 2022 at 09:13:18**, but which timezone are we speaking of... Nonetheless, given my theory, I tasked myself with finding objects that cast visible shadow and tried to approximate bearing. Turns out, shadows point almost perfectly north, meaning that local time is around noon.
+Another interesting clue is **filename** of the image - `20220901_091318-C5etx_H-.png`. Frist part of it looks like a datetime (**20220901_091318**). My theory was - if I were to believe the filename, this could mean that the photo was taken on **Sep 1st, 2022 at 09:13:18**, although specific timezone remained unknown. Then, I focused on finding objects that cast visible shadow and tried to approximate bearing of those shadows. Turns out, they point almost perfectly north, meaning that local time is around noon.
 
-Alright, time for a small summary: a `cargo ship` docked at a `small, arctic port`, possibly u`ndergoing loading/unloading operations`. The port itself is most definitely not a hub. It serves as a **landing zone for an arctic outpost or base with visible buildings, containers and fuel storage**. The terrain has a few bodies of water behind the shoreline and a road on the left.
+Alright, time for a small summary: a cargo ship docked at a small, arctic port, possibly undergoing loading/unloading operations. The port itself is most definitely not a big hub that sees cargo ships often. It more or less serves as a **landing zone for an arctic outpost/base with visible buildings, containers and fuel storage**. The landscape has a few bodies of water behind the shoreline and a road on the left.
 
-Based on current findings, my educated guess pointed me to a location to **latitude of at least 60-70 degrees north**.
+Based on current findings, my educated guess pointed me to a location to **latitude of at least 65-70 degrees north**.
 
 ### Port mapping attempts!
 
@@ -52,7 +52,7 @@ Armed with my up to date findings, I went to **MarineTraffic** to try to map the
 
 ![marinetraffic](/assets/posts/osintfrozennorth2026/marinetraffic.png)
 
-I was interested in pretty much anything above this line. Sadly, after several hours and countless identification attempts later, I had no candidates. I commited to double check Northern Canada, Alaska, Russia, Svalbard, Norway, Greenland... Still nothing. At this point I knew that I have to change strategy. It was completely plausibe that the port itself got modernized, the geography might have changed or... **it's not present on the map at all**.
+I was interested in pretty much anything above this "highly educated" line. Sadly, after several hours and countless identification attempts later, I had no candidates. I commited to double check Northern Canada, Alaska, Russia, Svalbard, Norway, Greenland... Still nothing. At this point I knew that I have to change strategy. It was completely plausibe that the port itself got modernized, the geography might have changed or... **it's not present on the map at all**.
 
 After additional research, I found several news articles mentioning Russian presence in the Arctic Ocean. Main consensus was that there are significant efforts related to militarization of the ocean coming from Russia. Due to global warming and subsequent ice melting, new routes of traffic may emerge - for civilian and military ships alike. Sounds like a whole new playground from geopolitical perspective.
 
