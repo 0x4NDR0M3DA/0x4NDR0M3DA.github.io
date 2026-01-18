@@ -64,11 +64,11 @@ If that's the deal, then this might be a military complex. I then searched for m
 
 ![bases](/assets/posts/osintfrozennorth2026/bases.png)
 
-I quickly examited **Nagurskoye Airbase** that is located in **Franz Josef Land** archipelago, more precisely on **Alexander Island**.
+I briefly examined **Nagurskoye Airbase** that is located in **Franz Josef Land** archipelago, more precisely on **Alexander Island**.
 
 ![base2](/assets/posts/osintfrozennorth2026/base2.png)
 
-I then compared the original image with up-to-date and historical data. I used **Google Earth** and **World Imagery Wayback** to investiage and... there it is! The port belongs to the Nagurskoye Airbase. Coordinates: 
+I noticed a very peculiar harbor. I then compared the original image with up-to-date and historical data from **Google Earth** and **World Imagery Wayback** to investigate, pinpoint and... there it is! **The port belongs to the Nagurskoye Airbase**. Coordinates: 
 
 **80°46'17"N 47°40'22"E**
 
@@ -76,7 +76,7 @@ I then compared the original image with up-to-date and historical data. I used *
 
 ### Back to the ship!
 
-Now, with a port location known, I went straight to **GlobalFishingWatch** to analyze all vessels that broadcasted their position near or in the port around Sep 1st, 2022.
+Now, with port location known, I went straight to **GlobalFishingWatch** to analyze all vessels that broadcasted their position near or in the port around Sep 1st, 2022.
 
 Surely enough, I found some hits. Looks like there were two vessels heading to and out of the island between **Aug 30th - Sep 3rd.**:
 - **Mekhanik Pyatlin**
